@@ -1,0 +1,14 @@
+source,target,score,source_in_input,target_in_input
+Tarbp2,Eif4e,0.000939,True,True
+Eif4e,Ankhd1,0.000435,True,True
+Eif4e,Nup88,0.000512,True,True
+Hdac3,Sirt3,0.000437,True,True
+Hdac3,Becn1,0.000448,True,True
+Hdac3,Atxn7l2,0.000457,True,True
+Hdac3,Gps2,0.000998,True,True
+Sirt3,Becn1,0.0006810000000000001,True,True
+Becn1,Usp33,0.00041999999999999996,True,True
+Atxn7l2,Gps2,0.000495,True,True
+Ankhd1,Usp34,0.000414,True,True
+Smurf1,Plekho1,0.000941,True,True
+Ewsr1,Bclaf1,0.00045900000000000004,True,True

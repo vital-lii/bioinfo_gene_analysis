@@ -1,0 +1,34 @@
+Network Statistics for D:\article_tho\copd_inhalation_tcm\trial\microbiome_analysis\results\intera
+==================================================
+Species: mouse (NCBI Taxonomy ID: 10090)
+Total genes in input: 799
+Genes recognized by STRING: 792 (99.12%)
+Input genes in network: 255 (31.91%)
+Total nodes in network: 255
+Total edges in network: 215
+Interaction score threshold: 400
+Network density: 0.0066
+Average clustering coefficient: 0.1370
+
+Top 20 Hub Genes (from input list):
+------------------------------
+Gsk3b: 7 connections
+Hif1a: 6 connections
+Eif4e: 6 connections
+Sox2: 6 connections
+Ncor1: 6 connections
+Srrm1: 5 connections
+Tcerg1: 5 connections
+Atm: 5 connections
+Rtel1: 5 connections
+Rpl3: 4 connections
+Mllt3: 4 connections
+Ppp6r3: 4 connections
+Stat3: 4 connections
+Pml: 4 connections
+Foxo3: 4 connections
+Zup1: 3 connections
+Srsf11: 3 connections
+Ino80: 3 connections
+Urb1: 3 connections
+Dot1l: 3 connections

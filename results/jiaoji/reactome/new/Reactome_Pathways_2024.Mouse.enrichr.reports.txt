@@ -1,0 +1,290 @@
+Gene_set	Term	Overlap	P-value	Adjusted P-value	Old P-value	Old Adjusted P-value	Odds Ratio	Combined Score	Genes
+Reactome_Pathways_2024	Regulation of MECP2 Expression and Activity	3/32	2.152441e-05	6.220556e-03	0	0	6.653059e+01	7.149592e+02	CAMK2D;HDAC3;GPS2
+Reactome_Pathways_2024	Loss of MECP2 Binding Ability to the NCoR SMRT Complex	2/7	5.859180e-05	6.943735e-03	0	0	2.495125e+02	2.431478e+03	HDAC3;GPS2
+Reactome_Pathways_2024	Interferon Signaling	5/280	1.035410e-04	6.943735e-03	0	0	1.234545e+01	1.132762e+02	BECN1;CAMK2D;NUP88;EIF4E;TARBP2
+Reactome_Pathways_2024	Antiviral Mechanism by IFN-stimulated Genes	4/158	1.445559e-04	6.943735e-03	0	0	1.715325e+01	1.516663e+02	BECN1;NUP88;EIF4E;TARBP2
+Reactome_Pathways_2024	Transcriptional Regulation by MECP2	3/63	1.662389e-04	6.943735e-03	0	0	3.210645e+01	2.793931e+02	CAMK2D;HDAC3;GPS2
+Reactome_Pathways_2024	Pervasive Developmental Disorders	2/13	2.162409e-04	6.943735e-03	0	0	1.133807e+02	9.568329e+02	HDAC3;GPS2
+Reactome_Pathways_2024	Loss of Function of MECP2 in Rett Syndrome	2/13	2.162409e-04	6.943735e-03	0	0	1.133807e+02	9.568329e+02	HDAC3;GPS2
+Reactome_Pathways_2024	Disorders of Developmental Biology	2/13	2.162409e-04	6.943735e-03	0	0	1.133807e+02	9.568329e+02	HDAC3;GPS2
+Reactome_Pathways_2024	Disorders of Nervous System Development	2/13	2.162409e-04	6.943735e-03	0	0	1.133807e+02	9.568329e+02	HDAC3;GPS2
+Reactome_Pathways_2024	ISG15 Antiviral Mechanism	3/76	2.898863e-04	8.377715e-03	0	0	2.637163e+01	2.148239e+02	BECN1;NUP88;EIF4E
+Reactome_Pathways_2024	Transport of the SLBP Independent Mature mRNA	2/35	1.611348e-03	3.862223e-02	0	0	3.775189e+01	2.427705e+02	NUP88;EIF4E
+Reactome_Pathways_2024	Transport of the SLBP Dependant Mature mRNA	2/36	1.704320e-03	3.862223e-02	0	0	3.663971e+01	2.335631e+02	NUP88;EIF4E
+Reactome_Pathways_2024	Metabolism of Proteins	10/2067	1.737332e-03	3.862223e-02	0	0	3.627654e+00	2.305521e+01	SPSB3;BECN1;HDAC3;USP33;USP34;NUP88;NDUFV3;ADAMTS9;EIF4E;DHDDS
+Reactome_Pathways_2024	Transport of Mature mRNA Derived From an Intronless Transcript	2/42	2.314425e-03	4.583378e-02	0	0	3.113437e+01	1.889419e+02	NUP88;EIF4E
+Reactome_Pathways_2024	Transport of Mature mRNAs Derived From Intronless Transcripts	2/43	2.424745e-03	4.583378e-02	0	0	3.037348e+01	1.829099e+02	NUP88;EIF4E
+Reactome_Pathways_2024	NR1H3 & NR1H2 Regulate Gene Expression Linked to Cholesterol Transport and Efflux	2/44	2.537511e-03	4.583378e-02	0	0	2.964881e+01	1.771982e+02	HDAC3;GPS2
+Reactome_Pathways_2024	NR1H2 and NR1H3-mediated Signaling	2/54	3.797894e-03	6.203631e-02	0	0	2.393510e+01	1.333977e+02	HDAC3;GPS2
+Reactome_Pathways_2024	Ub-specific Processing Proteases	3/190	4.066325e-03	6.203631e-02	0	0	1.023581e+01	5.634830e+01	BECN1;USP33;USP34
+Reactome_Pathways_2024	Transcriptional Activation of Mitochondrial Biogenesis	2/56	4.078512e-03	6.203631e-02	0	0	2.304630e+01	1.268013e+02	HDAC3;SIRT3
+Reactome_Pathways_2024	HDACs Deacetylate Histones	2/60	4.667780e-03	6.601854e-02	0	0	2.145259e+01	1.151376e+02	HDAC3;GPS2
+Reactome_Pathways_2024	Gene Expression (Transcription)	8/1615	4.821944e-03	6.601854e-02	0	0	3.515198e+00	1.875210e+01	CAMK2D;HDAC3;SMURF1;MAX;GPS2;NUP88;TARBP2;SIRT3
+Reactome_Pathways_2024	HCMV Early Events	3/205	5.025633e-03	6.601854e-02	0	0	9.468540e+00	5.011891e+01	HDAC3;GPS2;NUP88
+Reactome_Pathways_2024	Transport of Mature Transcript to Cytoplasm	2/83	8.758118e-03	1.044281e-01	0	0	1.534336e+01	7.269339e+01	NUP88;EIF4E
+Reactome_Pathways_2024	Cytokine Signaling in Immune System	5/776	9.495447e-03	1.044281e-01	0	0	4.292455e+00	1.998972e+01	BECN1;CAMK2D;NUP88;EIF4E;TARBP2
+Reactome_Pathways_2024	HCMV Infection	3/259	9.553002e-03	1.044281e-01	0	0	7.450857e+00	3.465319e+01	HDAC3;GPS2;NUP88
+Reactome_Pathways_2024	Post-translational Protein Modification	7/1457	1.011499e-02	1.044281e-01	0	0	3.310651e+00	1.520826e+01	SPSB3;BECN1;USP33;USP34;NUP88;ADAMTS9;DHDDS
+Reactome_Pathways_2024	p75NTR Negatively Regulates Cell Cycle via SC1	1/6	1.015791e-02	1.044281e-01	0	0	1.209758e+02	5.552186e+02	HDAC3
+Reactome_Pathways_2024	Synthesis of Dolichyl-phosphate	1/6	1.015791e-02	1.044281e-01	0	0	1.209758e+02	5.552186e+02	DHDDS
+Reactome_Pathways_2024	Deubiquitination	3/268	1.047895e-02	1.044281e-01	0	0	7.194522e+00	3.279542e+01	BECN1;USP33;USP34
+Reactome_Pathways_2024	Mitochondrial Biogenesis	2/97	1.180670e-02	1.116497e-01	0	0	1.307303e+01	5.803231e+01	HDAC3;SIRT3
+Reactome_Pathways_2024	Cellular Response to Heat Stress	2/101	1.275177e-02	1.116497e-01	0	0	1.254230e+01	5.471057e+01	CAMK2D;NUP88
+Reactome_Pathways_2024	Epigenetic Regulation of Adipogenesis Genes by MLL3 and MLL4 Complexes	2/103	1.323636e-02	1.116497e-01	0	0	1.229270e+01	5.316331e+01	HDAC3;GPS2
+Reactome_Pathways_2024	Epigenetic Regulation of Gene Expression by MLL3 and MLL4 Complexes	2/103	1.323636e-02	1.116497e-01	0	0	1.229270e+01	5.316331e+01	HDAC3;GPS2
+Reactome_Pathways_2024	MLL4 and MLL3 Complexes Regulate Expression of PPARG Targets in Adipogenesis and Hepatic Steatosis	2/103	1.323636e-02	1.116497e-01	0	0	1.229270e+01	5.316331e+01	HDAC3;GPS2
+Reactome_Pathways_2024	Synthesis of PG	1/8	1.352158e-02	1.116497e-01	0	0	8.640260e+01	3.718308e+02	PLD2
+Reactome_Pathways_2024	Transcriptional Regulation by RUNX2	2/106	1.397815e-02	1.122135e-01	0	0	1.193630e+01	5.097109e+01	HDAC3;SMURF1
+Reactome_Pathways_2024	Small Interfering RNA (siRNA) Biogenesis	1/9	1.519926e-02	1.161103e-01	0	0	7.559848e+01	3.164937e+02	TARBP2
+Reactome_Pathways_2024	SARS-CoV-2 Infection	3/313	1.587782e-02	1.161103e-01	0	0	6.136108e+00	2.542087e+01	BECN1;NUP88;ZDHHC3
+Reactome_Pathways_2024	Generic Transcription Pathway	6/1230	1.631595e-02	1.161103e-01	0	0	3.281162e+00	1.350399e+01	CAMK2D;HDAC3;SMURF1;MAX;GPS2;SIRT3
+Reactome_Pathways_2024	PPARA Activates Gene Expression	2/117	1.684825e-02	1.161103e-01	0	0	1.078859e+01	4.405529e+01	HDAC3;GPS2
+Reactome_Pathways_2024	CaMK IV-mediated Phosphorylation of CREB	1/10	1.687417e-02	1.161103e-01	0	0	6.719529e+01	2.742892e+02	CAMK2D
+Reactome_Pathways_2024	Regulation of FOXO Transcriptional Activity by Acetylation	1/10	1.687417e-02	1.161103e-01	0	0	6.719529e+01	2.742892e+02	SIRT3
+Reactome_Pathways_2024	Regulation of Lipid Metabolism by PPARalpha	2/119	1.739496e-02	1.169103e-01	0	0	1.060310e+01	4.295925e+01	HDAC3;GPS2
+Reactome_Pathways_2024	STAT3 Nuclear Events Downstream of ALK Signaling	1/11	1.854631e-02	1.218155e-01	0	0	6.047273e+01	2.411341e+02	HDAC3
+Reactome_Pathways_2024	Glycerophospholipid Biosynthesis	2/128	1.994741e-02	1.270073e-01	0	0	9.841270e+00	3.852519e+01	ABHD4;PLD2
+Reactome_Pathways_2024	Z-decay Degradation of Maternal mRNAs by Zygotically Expressed Factors	1/12	2.021569e-02	1.270073e-01	0	0	5.497245e+01	2.144638e+02	EIF4E
+Reactome_Pathways_2024	Gene Silencing by RNA	2/134	2.173119e-02	1.326676e-01	0	0	9.391098e+00	3.595858e+01	NUP88;TARBP2
+Reactome_Pathways_2024	Epigenetic Regulation by WDR5-containing Histone Modifying Complexes	2/135	2.203476e-02	1.326676e-01	0	0	9.320019e+00	3.555712e+01	HDAC3;GPS2
+Reactome_Pathways_2024	SARS-CoV-2 Activates Modulates Innate and Adaptive Immune Responses	2/138	2.295606e-02	1.339359e-01	0	0	9.113051e+00	3.439424e+01	BECN1;NUP88
+Reactome_Pathways_2024	Disease	8/2131	2.377248e-02	1.339359e-01	0	0	2.586036e+00	9.669774e+00	BECN1;CAMK2D;HDAC3;GPS2;NUP88;ADAMTS9;ZDHHC3;DHDDS
+Reactome_Pathways_2024	Immune System	8/2150	2.493943e-02	1.339359e-01	0	0	2.560368e+00	9.451099e+00	BECN1;CAMK2D;CD300A;SMURF1;NUP88;EIF4E;TARBP2;PLD2
+Reactome_Pathways_2024	Degradation of Cysteine and Homocysteine	1/15	2.520732e-02	1.339359e-01	0	0	4.318615e+01	1.589518e+02	CSAD
+Reactome_Pathways_2024	Diseases Associated With Glycosylation Precursor Biosynthesis	1/15	2.520732e-02	1.339359e-01	0	0	4.318615e+01	1.589518e+02	DHDDS
+Reactome_Pathways_2024	RNA Polymerase II Transcription	6/1360	2.546951e-02	1.339359e-01	0	0	2.945558e+00	1.081100e+01	CAMK2D;HDAC3;SMURF1;MAX;GPS2;SIRT3
+Reactome_Pathways_2024	Diseases of Glycosylation	2/146	2.548953e-02	1.339359e-01	0	0	8.603299e+00	3.156970e+01	ADAMTS9;DHDDS
+Reactome_Pathways_2024	TGF-beta Receptor Signaling in EMT (Epithelial to Mesenchymal Transition)	1/16	2.686571e-02	1.365452e-01	0	0	4.030505e+01	1.457795e+02	SMURF1
+Reactome_Pathways_2024	Metabolism	8/2181	2.693106e-02	1.365452e-01	0	0	2.519452e+00	9.106496e+00	HDAC3;ABHD4;GPS2;NUP88;NDUFV3;CSAD;SIRT3;PLD2
+Reactome_Pathways_2024	Translation of Replicase and Assembly of the Replication Transcription Complex 9694676	1/17	2.852135e-02	1.408053e-01	0	0	3.778409e+01	1.344019e+02	BECN1
+Reactome_Pathways_2024	Viral Infection Pathways	5/1029	2.874573e-02	1.408053e-01	0	0	3.189318e+00	1.131974e+01	BECN1;HDAC3;GPS2;NUP88;ZDHHC3
+Reactome_Pathways_2024	Mitochondrial Unfolded Protein Response (UPRmt)	1/18	3.017427e-02	1.429568e-01	0	0	3.555971e+01	1.244862e+02	SIRT3
+Reactome_Pathways_2024	Translation of Replicase and Assembly of the Replication Transcription Complex 9679504	1/18	3.017427e-02	1.429568e-01	0	0	3.555971e+01	1.244862e+02	BECN1
+Reactome_Pathways_2024	Transcription of E2F Targets Under Negative Control by DREAM Complex	1/19	3.182445e-02	1.483430e-01	0	0	3.358249e+01	1.157763e+02	MAX
+Reactome_Pathways_2024	Ras Activation Upon Ca2+ Influx Through NMDA Receptor	1/20	3.347191e-02	1.511466e-01	0	0	3.181340e+01	1.080717e+02	CAMK2D
+Reactome_Pathways_2024	Maturation of TCA Enzymes and Regulation of TCA Cycle	1/20	3.347191e-02	1.511466e-01	0	0	3.181340e+01	1.080717e+02	SIRT3
+Reactome_Pathways_2024	Negative Regulation of NMDA Receptor-Mediated Neuronal Transmission	1/21	3.511665e-02	1.537683e-01	0	0	3.022121e+01	1.012133e+02	CAMK2D
+Reactome_Pathways_2024	Unblocking of NMDA Receptors, Glutamate Binding and Activation	1/21	3.511665e-02	1.537683e-01	0	0	3.022121e+01	1.012133e+02	CAMK2D
+Reactome_Pathways_2024	Long-term Potentiation	1/23	3.839798e-02	1.599665e-01	0	0	2.747107e+01	8.954885e+01	CAMK2D
+Reactome_Pathways_2024	Metabolism of Lipids	4/758	3.857630e-02	1.599665e-01	0	0	3.397347e+00	1.105876e+01	HDAC3;ABHD4;GPS2;PLD2
+Reactome_Pathways_2024	mTORC1-mediated Signalling	1/24	4.003458e-02	1.599665e-01	0	0	2.627536e+01	8.455442e+01	EIF4E
+Reactome_Pathways_2024	RUNX2 Regulates Osteoblast Differentiation	1/24	4.003458e-02	1.599665e-01	0	0	2.627536e+01	8.455442e+01	HDAC3
+Reactome_Pathways_2024	Deadenylation of mRNA	1/25	4.166847e-02	1.599665e-01	0	0	2.517929e+01	8.002006e+01	EIF4E
+Reactome_Pathways_2024	Downregulation of TGF-beta Receptor Signaling	1/26	4.329967e-02	1.599665e-01	0	0	2.417091e+01	7.588723e+01	SMURF1
+Reactome_Pathways_2024	MicroRNA (miRNA) Biogenesis	1/26	4.329967e-02	1.599665e-01	0	0	2.417091e+01	7.588723e+01	TARBP2
+Reactome_Pathways_2024	Cellular Responses to Stress	4/787	4.332528e-02	1.599665e-01	0	0	3.266582e+00	1.025386e+01	CAMK2D;HDAC3;NUP88;SIRT3
+Reactome_Pathways_2024	G0 and Early G1	1/27	4.492818e-02	1.599665e-01	0	0	2.324009e+01	7.210681e+01	MAX
+Reactome_Pathways_2024	Notch-HLH Transcription Pathway	1/28	4.655399e-02	1.599665e-01	0	0	2.237823e+01	6.863721e+01	HDAC3
+Reactome_Pathways_2024	CREB1 Phosphorylation Through NMDA Receptor-Mediated Activation of RAS Signaling	1/28	4.655399e-02	1.599665e-01	0	0	2.237823e+01	6.863721e+01	CAMK2D
+Reactome_Pathways_2024	Sulfur Amino Acid Metabolism	1/28	4.655399e-02	1.599665e-01	0	0	2.237823e+01	6.863721e+01	CSAD
+Reactome_Pathways_2024	Acyl Chain Remodelling of PE	1/29	4.817712e-02	1.599665e-01	0	0	2.157792e+01	6.544306e+01	ABHD4
+Reactome_Pathways_2024	Signaling by ALK	1/30	4.979756e-02	1.599665e-01	0	0	2.083281e+01	6.249404e+01	HDAC3
+Reactome_Pathways_2024	Phospholipid Metabolism	2/211	4.983632e-02	1.599665e-01	0	0	5.908194e+00	1.771874e+01	ABHD4;PLD2
+Reactome_Pathways_2024	FOXO-mediated Transcription of Oxidative Stress, Metabolic and Neuronal Genes	1/31	5.141533e-02	1.599665e-01	0	0	2.013737e+01	5.976408e+01	SIRT3
+Reactome_Pathways_2024	Antigen Presentation Folding, Assembly and Peptide Loading of Class I MHC	1/31	5.141533e-02	1.599665e-01	0	0	2.013737e+01	5.976408e+01	BECN1
+Reactome_Pathways_2024	Signaling by BMP	1/31	5.141533e-02	1.599665e-01	0	0	2.013737e+01	5.976408e+01	SMURF1
+Reactome_Pathways_2024	Glutamate Binding, Activation of AMPA Receptors and Synaptic Plasticity	1/31	5.141533e-02	1.599665e-01	0	0	2.013737e+01	5.976408e+01	CAMK2D
+Reactome_Pathways_2024	Trafficking of AMPA Receptors	1/31	5.141533e-02	1.599665e-01	0	0	2.013737e+01	5.976408e+01	CAMK2D
+Reactome_Pathways_2024	RUNX2 Regulates Bone Development	1/31	5.141533e-02	1.599665e-01	0	0	2.013737e+01	5.976408e+01	HDAC3
+Reactome_Pathways_2024	SARS-CoV Infections	3/498	5.195208e-02	1.599665e-01	0	0	3.806647e+00	1.125791e+01	BECN1;NUP88;ZDHHC3
+Reactome_Pathways_2024	SARS-CoV-2-host Interactions	2/218	5.281841e-02	1.599665e-01	0	0	5.714699e+00	1.680633e+01	BECN1;NUP88
+Reactome_Pathways_2024	Phase 0 - Rapid Depolarisation	1/32	5.303042e-02	1.599665e-01	0	0	1.948680e+01	5.723059e+01	CAMK2D
+Reactome_Pathways_2024	Defective TPR May Confer Susceptibility Towards Thyroid Papillary Carcinoma (TPC)	1/32	5.303042e-02	1.599665e-01	0	0	1.948680e+01	5.723059e+01	NUP88
+Reactome_Pathways_2024	Regulation of Glucokinase by Glucokinase Regulatory Protein	1/32	5.303042e-02	1.599665e-01	0	0	1.948680e+01	5.723059e+01	NUP88
+Reactome_Pathways_2024	Citric Acid Cycle (TCA Cycle)	1/34	5.625260e-02	1.599665e-01	0	0	1.830395e+01	5.267699e+01	SIRT3
+Reactome_Pathways_2024	RAF Activation	1/34	5.625260e-02	1.599665e-01	0	0	1.830395e+01	5.267699e+01	CAMK2D
+Reactome_Pathways_2024	Transcriptional Regulation by E2F6	1/34	5.625260e-02	1.599665e-01	0	0	1.830395e+01	5.267699e+01	MAX
+Reactome_Pathways_2024	SUMOylation of SUMOylation Proteins	1/35	5.785970e-02	1.599665e-01	0	0	1.776471e+01	5.062469e+01	NUP88
+Reactome_Pathways_2024	Nuclear Import of Rev Protein	1/35	5.785970e-02	1.599665e-01	0	0	1.776471e+01	5.062469e+01	NUP88
+Reactome_Pathways_2024	CaM Pathway	1/35	5.785970e-02	1.599665e-01	0	0	1.776471e+01	5.062469e+01	CAMK2D
+Reactome_Pathways_2024	Calmodulin Induced Events	1/35	5.785970e-02	1.599665e-01	0	0	1.776471e+01	5.062469e+01	CAMK2D
+Reactome_Pathways_2024	Rev-mediated Nuclear Export of HIV RNA	1/36	5.946415e-02	1.599665e-01	0	0	1.725628e+01	4.870380e+01	NUP88
+Reactome_Pathways_2024	Nuclear Pore Complex (NPC) Disassembly	1/36	5.946415e-02	1.599665e-01	0	0	1.725628e+01	4.870380e+01	NUP88
+Reactome_Pathways_2024	Ca-dependent Events	1/37	6.106594e-02	1.599665e-01	0	0	1.677609e+01	4.690262e+01	CAMK2D
+Reactome_Pathways_2024	HSF1-dependent Transactivation	1/37	6.106594e-02	1.599665e-01	0	0	1.677609e+01	4.690262e+01	CAMK2D
+Reactome_Pathways_2024	Transport of Ribonucleoproteins Into the Host Nucleus	1/37	6.106594e-02	1.599665e-01	0	0	1.677609e+01	4.690262e+01	NUP88
+Reactome_Pathways_2024	Chromatin Modifying Enzymes	2/238	6.167884e-02	1.599665e-01	0	0	5.225106e+00	1.455618e+01	HDAC3;GPS2
+Reactome_Pathways_2024	Chromatin Organization	2/238	6.167884e-02	1.599665e-01	0	0	5.225106e+00	1.455618e+01	HDAC3;GPS2
+Reactome_Pathways_2024	Cellular Responses to Stimuli	4/887	6.216219e-02	1.599665e-01	0	0	2.881540e+00	8.004943e+00	CAMK2D;HDAC3;NUP88;SIRT3
+Reactome_Pathways_2024	NEP NS2 Interacts With the Cellular Export Machinery	1/38	6.266508e-02	1.599665e-01	0	0	1.632187e+01	4.521077e+01	NUP88
+Reactome_Pathways_2024	Interactions of Rev With Host Cellular Proteins	1/38	6.266508e-02	1.599665e-01	0	0	1.632187e+01	4.521077e+01	NUP88
+Reactome_Pathways_2024	Defective B3GALTL Causes PpS	1/38	6.266508e-02	1.599665e-01	0	0	1.632187e+01	4.521077e+01	ADAMTS9
+Reactome_Pathways_2024	Maturation of Spike Protein 9694548	1/38	6.266508e-02	1.599665e-01	0	0	1.632187e+01	4.521077e+01	ZDHHC3
+Reactome_Pathways_2024	Export of Viral Ribonucleoproteins From Nucleus	1/39	6.426158e-02	1.599665e-01	0	0	1.589155e+01	4.361901e+01	NUP88
+Reactome_Pathways_2024	SUMOylation of Ubiquitinylation Proteins	1/39	6.426158e-02	1.599665e-01	0	0	1.589155e+01	4.361901e+01	NUP88
+Reactome_Pathways_2024	O-glycosylation of TSR Domain-Containing Proteins	1/39	6.426158e-02	1.599665e-01	0	0	1.589155e+01	4.361901e+01	ADAMTS9
+Reactome_Pathways_2024	Association of TriC CCT With Target Proteins During Biosynthesis	1/39	6.426158e-02	1.599665e-01	0	0	1.589155e+01	4.361901e+01	HDAC3
+Reactome_Pathways_2024	Synthesis of PA	1/39	6.426158e-02	1.599665e-01	0	0	1.589155e+01	4.361901e+01	PLD2
+Reactome_Pathways_2024	Vpr-mediated Nuclear Import of PICs	1/40	6.585544e-02	1.599665e-01	0	0	1.548329e+01	4.211910e+01	NUP88
+Reactome_Pathways_2024	Signaling by RAF1 Mutants	1/41	6.744666e-02	1.599665e-01	0	0	1.509545e+01	4.070366e+01	CAMK2D
+Reactome_Pathways_2024	DAG and IP3 Signaling	1/41	6.744666e-02	1.599665e-01	0	0	1.509545e+01	4.070366e+01	CAMK2D
+Reactome_Pathways_2024	MTOR Signalling	1/41	6.744666e-02	1.599665e-01	0	0	1.509545e+01	4.070366e+01	EIF4E
+Reactome_Pathways_2024	Infectious Disease	5/1311	6.877009e-02	1.599665e-01	0	0	2.463431e+00	6.594572e+00	BECN1;HDAC3;GPS2;NUP88;ZDHHC3
+Reactome_Pathways_2024	NS1 Mediated Effects on Host Pathways	1/42	6.903526e-02	1.599665e-01	0	0	1.472653e+01	3.936606e+01	NUP88
+Reactome_Pathways_2024	Assembly and Cell Surface Presentation of NMDA Receptors	1/43	7.062123e-02	1.599665e-01	0	0	1.437518e+01	3.810033e+01	CAMK2D
+Reactome_Pathways_2024	Interactions of Vpr With Host Cellular Proteins	1/43	7.062123e-02	1.599665e-01	0	0	1.437518e+01	3.810033e+01	NUP88
+Reactome_Pathways_2024	Aerobic Respiration and Respiratory Electron Transport	2/260	7.196858e-02	1.599665e-01	0	0	4.774225e+00	1.256349e+01	NDUFV3;SIRT3
+Reactome_Pathways_2024	Paradoxical Activation of RAF Signaling by Kinase Inactive BRAF	1/45	7.378530e-02	1.599665e-01	0	0	1.372039e+01	3.576350e+01	CAMK2D
+Reactome_Pathways_2024	Signaling by RAS Mutants	1/45	7.378530e-02	1.599665e-01	0	0	1.372039e+01	3.576350e+01	CAMK2D
+Reactome_Pathways_2024	Signaling by Moderate Kinase Activity BRAF Mutants	1/45	7.378530e-02	1.599665e-01	0	0	1.372039e+01	3.576350e+01	CAMK2D
+Reactome_Pathways_2024	Signaling Downstream of RAS Mutants	1/45	7.378530e-02	1.599665e-01	0	0	1.372039e+01	3.576350e+01	CAMK2D
+Reactome_Pathways_2024	TBC RABGAPs	1/45	7.378530e-02	1.599665e-01	0	0	1.372039e+01	3.576350e+01	TBC1D17
+Reactome_Pathways_2024	Regulation of RUNX3 Expression and Activity	1/45	7.378530e-02	1.599665e-01	0	0	1.372039e+01	3.576350e+01	SMURF1
+Reactome_Pathways_2024	Diseases of Metabolism	2/264	7.389663e-02	1.599665e-01	0	0	4.700382e+00	1.224491e+01	ADAMTS9;DHDDS
+Reactome_Pathways_2024	SUMOylation of DNA Replication Proteins	1/46	7.536341e-02	1.599665e-01	0	0	1.341481e+01	3.468311e+01	NUP88
+Reactome_Pathways_2024	M-decay Degradation of Maternal mRNAs by Maternally Stored Factors	1/46	7.536341e-02	1.599665e-01	0	0	1.341481e+01	3.468311e+01	EIF4E
+Reactome_Pathways_2024	Early SARS-CoV-2 Infection Events	1/46	7.536341e-02	1.599665e-01	0	0	1.341481e+01	3.468311e+01	BECN1
+Reactome_Pathways_2024	Signaling by Nuclear Receptors	2/270	7.682017e-02	1.599665e-01	0	0	4.593750e+00	1.178889e+01	HDAC3;GPS2
+Reactome_Pathways_2024	SUMOylation of RNA Binding Proteins	1/47	7.693891e-02	1.599665e-01	0	0	1.312253e+01	3.365592e+01	NUP88
+Reactome_Pathways_2024	Heme Signaling	1/47	7.693891e-02	1.599665e-01	0	0	1.312253e+01	3.365592e+01	HDAC3
+Reactome_Pathways_2024	TGF-beta Receptor Signaling Activates SMADs	1/47	7.693891e-02	1.599665e-01	0	0	1.312253e+01	3.365592e+01	SMURF1
+Reactome_Pathways_2024	NOTCH1 Intracellular Domain Regulates Transcription	1/48	7.851181e-02	1.620708e-01	0	0	1.284268e+01	3.267828e+01	HDAC3
+Reactome_Pathways_2024	PLC Beta Mediated Events	1/49	8.008211e-02	1.629840e-01	0	0	1.257449e+01	3.174686e+01	CAMK2D
+Reactome_Pathways_2024	Viral Messenger RNA Synthesis	1/49	8.008211e-02	1.629840e-01	0	0	1.257449e+01	3.174686e+01	NUP88
+Reactome_Pathways_2024	Asymmetric Localization of PCP Proteins	1/51	8.321491e-02	1.681756e-01	0	0	1.207030e+01	3.001074e+01	SMURF1
+Reactome_Pathways_2024	Processing of Capped Intron-Containing Pre-mRNA	2/285	8.428804e-02	1.682223e-01	0	0	4.346952e+00	1.075225e+01	NUP88;EIF4E
+Reactome_Pathways_2024	Signaling by WNT	2/287	8.530033e-02	1.682223e-01	0	0	4.316009e+00	1.062419e+01	SMURF1;USP34
+Reactome_Pathways_2024	Nuclear Envelope Breakdown	1/53	8.633736e-02	1.682223e-01	0	0	1.160490e+01	2.842611e+01	NUP88
+Reactome_Pathways_2024	Epigenetic Regulation of Gene Expression	2/291	8.733622e-02	1.682223e-01	0	0	4.255407e+00	1.037464e+01	HDAC3;GPS2
+Reactome_Pathways_2024	snRNP Assembly	1/54	8.789471e-02	1.682223e-01	0	0	1.138536e+01	2.768483e+01	NUP88
+Reactome_Pathways_2024	G-protein Mediated Events	1/54	8.789471e-02	1.682223e-01	0	0	1.138536e+01	2.768483e+01	CAMK2D
+Reactome_Pathways_2024	Ion Homeostasis	1/54	8.789471e-02	1.682223e-01	0	0	1.138536e+01	2.768483e+01	CAMK2D
+Reactome_Pathways_2024	Metabolism of Non-Coding RNA	1/54	8.789471e-02	1.682223e-01	0	0	1.138536e+01	2.768483e+01	NUP88
+Reactome_Pathways_2024	Ion Transport by P-type ATPases	1/55	8.944948e-02	1.695754e-01	0	0	1.117396e+01	2.697485e+01	CAMK2D
+Reactome_Pathways_2024	Organelle Biogenesis and Maintenance	2/297	9.041782e-02	1.695754e-01	0	0	4.167585e+00	1.001601e+01	HDAC3;SIRT3
+Reactome_Pathways_2024	Deadenylation-dependent mRNA Decay	1/56	9.100168e-02	1.695754e-01	0	0	1.097025e+01	2.629434e+01	EIF4E
+Reactome_Pathways_2024	SUMOylation of Chromatin Organization Proteins	1/58	9.409839e-02	1.695754e-01	0	0	1.058426e+01	2.501500e+01	NUP88
+Reactome_Pathways_2024	Signaling by NOTCH1 HD+PEST Domain Mutants in Cancer	1/58	9.409839e-02	1.695754e-01	0	0	1.058426e+01	2.501500e+01	HDAC3
+Reactome_Pathways_2024	Signaling by NOTCH1 PEST Domain Mutants in Cancer	1/58	9.409839e-02	1.695754e-01	0	0	1.058426e+01	2.501500e+01	HDAC3
+Reactome_Pathways_2024	Signaling by NOTCH1 in Cancer	1/58	9.409839e-02	1.695754e-01	0	0	1.058426e+01	2.501500e+01	HDAC3
+Reactome_Pathways_2024	Constitutive Signaling by NOTCH1 HD+PEST Domain Mutants	1/58	9.409839e-02	1.695754e-01	0	0	1.058426e+01	2.501500e+01	HDAC3
+Reactome_Pathways_2024	Constitutive Signaling by NOTCH1 PEST Domain Mutants	1/58	9.409839e-02	1.695754e-01	0	0	1.058426e+01	2.501500e+01	HDAC3
+Reactome_Pathways_2024	tRNA Processing in the Nucleus	1/59	9.564290e-02	1.695754e-01	0	0	1.040125e+01	2.441314e+01	NUP88
+Reactome_Pathways_2024	Cytoprotection by HMOX1	1/59	9.564290e-02	1.695754e-01	0	0	1.040125e+01	2.441314e+01	HDAC3
+Reactome_Pathways_2024	Regulation of RUNX2 Expression and Activity	1/59	9.564290e-02	1.695754e-01	0	0	1.040125e+01	2.441314e+01	SMURF1
+Reactome_Pathways_2024	Ribosomal Scanning and Start Codon Recognition	1/60	9.718485e-02	1.702207e-01	0	0	1.022445e+01	2.383462e+01	EIF4E
+Reactome_Pathways_2024	Translation Initiation Complex Formation	1/60	9.718485e-02	1.702207e-01	0	0	1.022445e+01	2.383462e+01	EIF4E
+Reactome_Pathways_2024	mRNA Activation Upon Binding of the Cap-Binding Complex and eIFs, and Subsequent Binding to 43S	1/61	9.872425e-02	1.708462e-01	0	0	1.005354e+01	2.327820e+01	EIF4E
+Reactome_Pathways_2024	Regulation of PTEN Gene Transcription	1/61	9.872425e-02	1.708462e-01	0	0	1.005354e+01	2.327820e+01	HDAC3
+Reactome_Pathways_2024	Translation of Structural Proteins 9694635	1/63	1.017954e-01	1.751123e-01	0	0	9.728250e+00	2.222701e+01	ZDHHC3
+Reactome_Pathways_2024	Intracellular Signaling by Second Messengers	2/321	1.030598e-01	1.756562e-01	0	0	3.849334e+00	8.747404e+00	CAMK2D;HDAC3
+Reactome_Pathways_2024	Synthesis of Substrates in N-glycan Biosythesis	1/64	1.033272e-01	1.756562e-01	0	0	9.573353e+00	2.173012e+01	DHDDS
+Reactome_Pathways_2024	Signaling by BRAF and RAF1 Fusions	1/65	1.048564e-01	1.772135e-01	0	0	9.423295e+00	2.125107e+01	CAMK2D
+Reactome_Pathways_2024	FOXO-mediated Transcription	1/67	1.079073e-01	1.813094e-01	0	0	9.136823e+00	2.034298e+01	SIRT3
+Reactome_Pathways_2024	Complex I Biogenesis	1/68	1.094290e-01	1.828033e-01	0	0	9.000000e+00	1.991232e+01	NDUFV3
+Reactome_Pathways_2024	Circadian Clock	1/70	1.124647e-01	1.867948e-01	0	0	8.738252e+00	1.909409e+01	HDAC3
+Reactome_Pathways_2024	Diseases Associated With O-glycosylation of Proteins	1/71	1.139788e-01	1.882279e-01	0	0	8.612987e+00	1.870519e+01	ADAMTS9
+Reactome_Pathways_2024	Hedgehog 'On' State	1/73	1.169995e-01	1.902681e-01	0	0	8.372896e+00	1.796476e+01	SMURF1
+Reactome_Pathways_2024	Cyclin E Associated Events During G1 S Transition	1/73	1.169995e-01	1.902681e-01	0	0	8.372896e+00	1.796476e+01	MAX
+Reactome_Pathways_2024	Signaling by NOTCH1	1/74	1.185061e-01	1.902681e-01	0	0	8.257783e+00	1.761212e+01	HDAC3
+Reactome_Pathways_2024	Glycolysis	1/74	1.185061e-01	1.902681e-01	0	0	8.257783e+00	1.761212e+01	NUP88
+Reactome_Pathways_2024	Transport of Mature mRNA Derived From an Intron-Containing Transcript	1/74	1.185061e-01	1.902681e-01	0	0	8.257783e+00	1.761212e+01	NUP88
+Reactome_Pathways_2024	Cyclin A Cdk2-associated Events at S Phase Entry	1/75	1.200102e-01	1.905657e-01	0	0	8.145782e+00	1.727051e+01	MAX
+Reactome_Pathways_2024	Transcriptional Regulation by Small RNAs	1/75	1.200102e-01	1.905657e-01	0	0	8.145782e+00	1.727051e+01	NUP88
+Reactome_Pathways_2024	SUMOylation of DNA Damage Response and Repair Proteins	1/77	1.230109e-01	1.942632e-01	0	0	7.930622e+00	1.661848e+01	NUP88
+Reactome_Pathways_2024	PCP CE Pathway	1/79	1.260017e-01	1.959872e-01	0	0	7.726496e+00	1.600512e+01	SMURF1
+Reactome_Pathways_2024	Biosynthesis of the N-glycan Precursor (Dolichol LLO) and Transfer to a Nascent Protein	1/79	1.260017e-01	1.959872e-01	0	0	7.726496e+00	1.600512e+01	DHDDS
+Reactome_Pathways_2024	PKR-mediated Signaling	1/80	1.274934e-01	1.959872e-01	0	0	7.628308e+00	1.571195e+01	TARBP2
+Reactome_Pathways_2024	Post NMDA Receptor Activation Events	1/80	1.274934e-01	1.959872e-01	0	0	7.628308e+00	1.571195e+01	CAMK2D
+Reactome_Pathways_2024	Late SARS-CoV-2 Infection Events	1/80	1.274934e-01	1.959872e-01	0	0	7.628308e+00	1.571195e+01	ZDHHC3
+Reactome_Pathways_2024	Oncogenic MAPK Signaling	1/82	1.304694e-01	1.995008e-01	0	0	7.439207e+00	1.515081e+01	CAMK2D
+Reactome_Pathways_2024	Regulation of HSF1-mediated Heat Shock Response	1/83	1.319537e-01	1.996707e-01	0	0	7.348115e+00	1.488217e+01	NUP88
+Reactome_Pathways_2024	Class I MHC Mediated Antigen Processing & Presentation	2/373	1.319623e-01	1.996707e-01	0	0	3.301044e+00	6.685403e+00	BECN1;SMURF1
+Reactome_Pathways_2024	Transcriptional Regulation of White Adipocyte Differentiation	1/84	1.334355e-01	2.008482e-01	0	0	7.259219e+00	1.462106e+01	HDAC3
+Reactome_Pathways_2024	Glucose Metabolism	1/85	1.349149e-01	2.020228e-01	0	0	7.172439e+00	1.436719e+01	NUP88
+Reactome_Pathways_2024	Transcriptional Regulation by RUNX3	1/86	1.363918e-01	2.031816e-01	0	0	7.087701e+00	1.412028e+01	SMURF1
+Reactome_Pathways_2024	RAC2 GTPase Cycle	1/88	1.393383e-01	2.065065e-01	0	0	6.924068e+00	1.364630e+01	PLD2
+Reactome_Pathways_2024	Opioid Signalling	1/90	1.422750e-01	2.087477e-01	0	0	6.767790e+00	1.319714e+01	CAMK2D
+Reactome_Pathways_2024	Activation of HOX Genes During Differentiation	1/91	1.437398e-01	2.087477e-01	0	0	6.692256e+00	1.298131e+01	HDAC3
+Reactome_Pathways_2024	Activation of Anterior HOX Genes in Hindbrain Development During Early Embryogenesis	1/91	1.437398e-01	2.087477e-01	0	0	6.692256e+00	1.298131e+01	HDAC3
+Reactome_Pathways_2024	Chaperonin-mediated Protein Folding	1/91	1.437398e-01	2.087477e-01	0	0	6.692256e+00	1.298131e+01	HDAC3
+Reactome_Pathways_2024	Activation of NMDA Receptors and Postsynaptic Events	1/93	1.466619e-01	2.116204e-01	0	0	6.546113e+00	1.256608e+01	CAMK2D
+Reactome_Pathways_2024	Signal Transduction	7/2613	1.471824e-01	2.116204e-01	0	0	1.727069e+00	3.309206e+00	CAMK2D;HDAC3;SMURF1;USP34;GPS2;EIF4E;PLD2
+Reactome_Pathways_2024	Signaling by TGF-beta Receptor Complex	1/94	1.481194e-01	2.119134e-01	0	0	6.475399e+00	1.236631e+01	SMURF1
+Reactome_Pathways_2024	Protein Folding	1/97	1.524772e-01	2.160094e-01	0	0	6.272096e+00	1.179618e+01	HDAC3
+Reactome_Pathways_2024	Mitochondrial Protein Degradation	1/97	1.524772e-01	2.160094e-01	0	0	6.272096e+00	1.179618e+01	NDUFV3
+Reactome_Pathways_2024	P75 NTR Receptor-Mediated Signalling	1/98	1.539251e-01	2.169182e-01	0	0	6.207123e+00	1.161532e+01	HDAC3
+Reactome_Pathways_2024	SLC Transporter Disorders	1/99	1.553705e-01	2.169182e-01	0	0	6.143476e+00	1.143880e+01	NUP88
+Reactome_Pathways_2024	Interferon Gamma Signaling	1/99	1.553705e-01	2.169182e-01	0	0	6.143476e+00	1.143880e+01	CAMK2D
+Reactome_Pathways_2024	Role of Phospholipids in Phagocytosis	1/107	1.668478e-01	2.318221e-01	0	0	5.677530e+00	1.016660e+01	PLD2
+Reactome_Pathways_2024	RSV-host Interactions	1/109	1.696933e-01	2.335304e-01	0	0	5.571829e+00	9.883101e+00	BECN1
+Reactome_Pathways_2024	Maternal to Zygotic Transition (MZT)	1/109	1.696933e-01	2.335304e-01	0	0	5.571829e+00	9.883101e+00	EIF4E
+Reactome_Pathways_2024	Adipogenesis	1/110	1.711126e-01	2.343675e-01	0	0	5.520434e+00	9.745958e+00	HDAC3
+Reactome_Pathways_2024	Mitotic Prophase	1/111	1.725295e-01	2.351935e-01	0	0	5.469972e+00	9.611765e+00	NUP88
+Reactome_Pathways_2024	Adaptive Immune System	3/854	1.759934e-01	2.387168e-01	0	0	2.173724e+00	3.776429e+00	BECN1;CD300A;SMURF1
+Reactome_Pathways_2024	O-linked Glycosylation	1/114	1.767661e-01	2.387168e-01	0	0	5.323947e+00	9.226017e+00	ADAMTS9
+Reactome_Pathways_2024	Diseases of Signal Transduction by Growth Factor Receptors and Second Messengers	2/451	1.782388e-01	2.395861e-01	0	0	2.716732e+00	4.685360e+00	CAMK2D;HDAC3
+Reactome_Pathways_2024	L13a-mediated Translational Silencing of Ceruloplasmin Expression	1/116	1.795788e-01	2.402698e-01	0	0	5.230830e+00	8.982073e+00	EIF4E
+Reactome_Pathways_2024	GTP Hydrolysis and Joining of the 60S Ribosomal Subunit	1/117	1.809817e-01	2.410309e-01	0	0	5.185475e+00	8.863842e+00	EIF4E
+Reactome_Pathways_2024	G1 S Transition	1/121	1.865698e-01	2.473334e-01	0	0	5.011616e+00	8.414252e+00	MAX
+Reactome_Pathways_2024	Rab Regulation of Trafficking	1/123	1.893500e-01	2.494248e-01	0	0	4.928962e+00	8.202572e+00	TBC1D17
+Reactome_Pathways_2024	Eukaryotic Translation Initiation	1/124	1.907366e-01	2.494248e-01	0	0	4.888643e+00	8.099805e+00	EIF4E
+Reactome_Pathways_2024	Cap-dependent Translation Initiation	1/124	1.907366e-01	2.494248e-01	0	0	4.888643e+00	8.099805e+00	EIF4E
+Reactome_Pathways_2024	Host Interactions of HIV Factors	1/126	1.935030e-01	2.519025e-01	0	0	4.809939e+00	7.900144e+00	NUP88
+Reactome_Pathways_2024	Cardiac Conduction	1/130	1.990082e-01	2.579075e-01	0	0	4.659854e+00	7.522912e+00	CAMK2D
+Reactome_Pathways_2024	Respiratory Syncytial Virus Infection Pathway	1/133	2.031132e-01	2.620522e-01	0	0	4.553260e+00	7.257860e+00	BECN1
+Reactome_Pathways_2024	Beta-catenin Independent WNT Signaling	1/134	2.044769e-01	2.626393e-01	0	0	4.518797e+00	7.172687e+00	SMURF1
+Reactome_Pathways_2024	Signaling by Hedgehog	1/136	2.071977e-01	2.649563e-01	0	0	4.451403e+00	7.006873e+00	SMURF1
+Reactome_Pathways_2024	Mitotic G1 Phase and G1 S Transition	1/139	2.112619e-01	2.689634e-01	0	0	4.353975e+00	6.768936e+00	MAX
+Reactome_Pathways_2024	Degradation of the Extracellular Matrix	1/140	2.126121e-01	2.694952e-01	0	0	4.322433e+00	6.692361e+00	ADAMTS9
+Reactome_Pathways_2024	Macroautophagy	1/143	2.166494e-01	2.732168e-01	0	0	4.230474e+00	6.470404e+00	BECN1
+Reactome_Pathways_2024	Cell Cycle, Mitotic	2/516	2.185257e-01	2.732168e-01	0	0	2.365272e+00	3.597228e+00	MAX;NUP88
+Reactome_Pathways_2024	PTEN Regulation	1/145	2.193297e-01	2.732168e-01	0	0	4.171296e+00	6.328603e+00	HDAC3
+Reactome_Pathways_2024	Late Phase of HIV Life Cycle	1/145	2.193297e-01	2.732168e-01	0	0	4.171296e+00	6.328603e+00	NUP88
+Reactome_Pathways_2024	tRNA Processing	1/146	2.206666e-01	2.737023e-01	0	0	4.142320e+00	6.259470e+00	NUP88
+Reactome_Pathways_2024	Influenza Viral RNA Transcription and Replication	1/149	2.246637e-01	2.774693e-01	0	0	4.057740e+00	6.058816e+00	NUP88
+Reactome_Pathways_2024	S Phase	1/150	2.259917e-01	2.779217e-01	0	0	4.030303e+00	5.994096e+00	MAX
+Reactome_Pathways_2024	SARS-CoV-1 Infection	1/157	2.352258e-01	2.848290e-01	0	0	3.848096e+00	5.569001e+00	BECN1
+Reactome_Pathways_2024	Death Receptor Signaling	1/157	2.352258e-01	2.848290e-01	0	0	3.848096e+00	5.569001e+00	HDAC3
+Reactome_Pathways_2024	Respiratory Electron Transport	1/158	2.365362e-01	2.848290e-01	0	0	3.823393e+00	5.512010e+00	NDUFV3
+Reactome_Pathways_2024	Autophagy	1/158	2.365362e-01	2.848290e-01	0	0	3.823393e+00	5.512010e+00	BECN1
+Reactome_Pathways_2024	HIV Life Cycle	1/158	2.365362e-01	2.848290e-01	0	0	3.823393e+00	5.512010e+00	NUP88
+Reactome_Pathways_2024	Signaling by TGFB Family Members	1/161	2.404544e-01	2.883457e-01	0	0	3.751136e+00	5.346213e+00	SMURF1
+Reactome_Pathways_2024	Disorders of Transmembrane Transporters	1/164	2.443530e-01	2.906091e-01	0	0	3.681539e+00	5.187810e+00	NUP88
+Reactome_Pathways_2024	Regulation of Expression of SLITs and ROBOs	1/164	2.443530e-01	2.906091e-01	0	0	3.681539e+00	5.187810e+00	USP33
+Reactome_Pathways_2024	Fcgamma Receptor (FCGR) Dependent Phagocytosis	1/168	2.495209e-01	2.955392e-01	0	0	3.592633e+00	4.987338e+00	PLD2
+Reactome_Pathways_2024	Influenza Infection	1/169	2.508076e-01	2.958506e-01	0	0	3.571068e+00	4.939034e+00	NUP88
+Reactome_Pathways_2024	SUMO E3 Ligases SUMOylate Target Proteins	1/170	2.520920e-01	2.961569e-01	0	0	3.549758e+00	4.891428e+00	NUP88
+Reactome_Pathways_2024	HCMV Late Events	1/171	2.533744e-01	2.964583e-01	0	0	3.528699e+00	4.844505e+00	NUP88
+Reactome_Pathways_2024	SUMOylation	1/176	2.597542e-01	3.026974e-01	0	0	3.427013e+00	4.619681e+00	NUP88
+Reactome_Pathways_2024	RAC1 GTPase Cycle	1/184	2.698519e-01	3.119488e-01	0	0	3.275873e+00	4.291008e+00	PLD2
+Reactome_Pathways_2024	Ion Channel Transport	1/184	2.698519e-01	3.119488e-01	0	0	3.275873e+00	4.291008e+00	CAMK2D
+Reactome_Pathways_2024	TCF Dependent Signaling in Response to WNT	1/189	2.760949e-01	3.178941e-01	0	0	3.187943e+00	4.102917e+00	USP34
+Reactome_Pathways_2024	Cellular Response to Chemical Stress	1/202	2.920853e-01	3.349709e-01	0	0	2.979798e+00	3.667265e+00	HDAC3
+Reactome_Pathways_2024	Muscle Contraction	1/204	2.945148e-01	3.350975e-01	0	0	2.950142e+00	3.606330e+00	CAMK2D
+Reactome_Pathways_2024	Neurotransmitter Receptors and Postsynaptic Signal Transmission	1/204	2.945148e-01	3.350975e-01	0	0	2.950142e+00	3.606330e+00	CAMK2D
+Reactome_Pathways_2024	Signaling by NOTCH	1/209	3.005530e-01	3.405018e-01	0	0	2.878497e+00	3.460330e+00	HDAC3
+Reactome_Pathways_2024	Signaling by ROBO Receptors	1/210	3.017546e-01	3.405018e-01	0	0	2.864579e+00	3.432169e+00	USP33
+Reactome_Pathways_2024	Cell Cycle	2/649	3.027992e-01	3.405018e-01	0	0	1.866209e+00	2.229533e+00	MAX;NUP88
+Reactome_Pathways_2024	Immunoregulatory Interactions Between a Lymphoid and a non-Lymphoid Cell	1/223	3.171945e-01	3.553070e-01	0	0	2.695059e+00	3.094575e+00	CD300A
+Reactome_Pathways_2024	HIV Infection	1/227	3.218782e-01	3.591613e-01	0	0	2.646822e+00	3.000391e+00	NUP88
+Reactome_Pathways_2024	Neddylation	1/234	3.299997e-01	3.668073e-01	0	0	2.566394e+00	2.845267e+00	SPSB3
+Reactome_Pathways_2024	RAF MAP Kinase Cascade	1/265	3.648457e-01	4.039863e-01	0	0	2.261478e+00	2.280205e+00	CAMK2D
+Reactome_Pathways_2024	Transmission Across Chemical Synapses	1/269	3.692118e-01	4.072604e-01	0	0	2.227273e+00	2.219221e+00	CAMK2D
+Reactome_Pathways_2024	MAPK1 MAPK3 Signaling	1/271	3.713839e-01	4.080987e-01	0	0	2.210550e+00	2.189592e+00	CAMK2D
+Reactome_Pathways_2024	Metabolism of RNA	2/761	3.730252e-01	4.083496e-01	0	0	1.581604e+00	1.559634e+00	NUP88;EIF4E
+Reactome_Pathways_2024	PIP3 Activates AKT Signaling	1/281	3.821360e-01	4.167445e-01	0	0	2.130519e+00	2.049515e+00	HDAC3
+Reactome_Pathways_2024	Metabolism of Carbohydrates	1/290	3.916600e-01	4.255254e-01	0	0	2.063227e+00	1.933989e+00	NUP88
+Reactome_Pathways_2024	Antigen Processing Ubiquitination & Proteasome Degradation	1/296	3.979301e-01	4.307183e-01	0	0	2.020647e+00	1.861984e+00	SMURF1
+Reactome_Pathways_2024	Extracellular Matrix Organization	1/300	4.020752e-01	4.335811e-01	0	0	1.993210e+00	1.816045e+00	ADAMTS9
+Reactome_Pathways_2024	Translation	1/302	4.041374e-01	4.341848e-01	0	0	1.979764e+00	1.793667e+00	EIF4E
+Reactome_Pathways_2024	Asparagine N-linked Glycosylation	1/306	4.082410e-01	4.369691e-01	0	0	1.953403e+00	1.750049e+00	DHDDS
+Reactome_Pathways_2024	MAPK Family Signaling Cascades	1/314	4.163662e-01	4.440215e-01	0	0	1.902701e+00	1.667128e+00	CAMK2D
+Reactome_Pathways_2024	G Alpha (I) Signalling Events	1/316	4.183805e-01	4.445293e-01	0	0	1.890428e+00	1.647251e+00	CAMK2D
+Reactome_Pathways_2024	Developmental Biology	3/1385	4.217317e-01	4.464486e-01	0	0	1.301340e+00	1.123558e+00	HDAC3;USP33;EIF4E
+Reactome_Pathways_2024	Metabolism of Amino Acids and Derivatives	1/358	4.591555e-01	4.842918e-01	0	0	1.664460e+00	1.295559e+00	CSAD
+Reactome_Pathways_2024	M Phase	1/372	4.721200e-01	4.961552e-01	0	0	1.600506e+00	1.201215e+00	NUP88
+Reactome_Pathways_2024	Neuronal System	1/411	5.066650e-01	5.305297e-01	0	0	1.445381e+00	9.827219e-01	CAMK2D
+Reactome_Pathways_2024	RHO GTPase Cycle	1/450	5.390116e-01	5.623623e-01	0	0	1.317203e+00	8.140556e-01	PLD2
+Reactome_Pathways_2024	Neutrophil Degranulation	1/478	5.609553e-01	5.831514e-01	0	0	1.238104e+00	7.157655e-01	CD300A
+Reactome_Pathways_2024	Innate Immune System	2/1149	5.892360e-01	6.103556e-01	0	0	1.025447e+00	5.423880e-01	CD300A;PLD2
+Reactome_Pathways_2024	Signaling by Receptor Tyrosine Kinases	1/536	6.032322e-01	6.226218e-01	0	0	1.100595e+00	5.562990e-01	HDAC3
+Reactome_Pathways_2024	Axon Guidance	1/541	6.066859e-01	6.239580e-01	0	0	1.090123e+00	5.447828e-01	USP33
+Reactome_Pathways_2024	Nervous System Development	1/567	6.241798e-01	6.396736e-01	0	0	1.038655e+00	4.895357e-01	USP33
+Reactome_Pathways_2024	GPCR Downstream Signalling	1/633	6.652638e-01	6.769762e-01	0	0	9.270234e-01	3.778284e-01	CAMK2D
+Reactome_Pathways_2024	Membrane Trafficking	1/633	6.652638e-01	6.769762e-01	0	0	9.270234e-01	3.778284e-01	TBC1D17
+Reactome_Pathways_2024	Signaling by Rho GTPases	1/672	6.874550e-01	6.971035e-01	0	0	8.713815e-01	3.265580e-01	PLD2
+Reactome_Pathways_2024	Signaling by Rho GTPases, Miro GTPases and RHOBTB3	1/688	6.961400e-01	7.034422e-01	0	0	8.503815e-01	3.080120e-01	PLD2
+Reactome_Pathways_2024	Signaling by GPCR	1/706	7.056307e-01	7.105480e-01	0	0	8.278960e-01	2.886570e-01	CAMK2D
+Reactome_Pathways_2024	Transport of Small Molecules	1/724	7.148334e-01	7.173154e-01	0	0	8.065300e-01	2.707568e-01	CAMK2D
+Reactome_Pathways_2024	Vesicle-mediated Transport	1/752	7.285962e-01	7.285962e-01	0	0	7.753299e-01	2.454971e-01	TBC1D17

@@ -1,0 +1,33 @@
+Comment[ArrayExpressAccession]	E-GEOD-43137
+MAGE-TAB Version	1.1				
+Public Release Date	2012-12-25
+Investigation Title	Real-time quantitative PCR analysis of mRNA from lungs of WT and Pglyrp1-/- mice sensitized with HDM				
+Comment[Submitted Name]	Real-time quantitative PCR analysis of mRNA from lungs of WT and Pglyrp1-/- mice sensitized with HDM
+Experiment Description	Wild type (WT) and Pglyrp1-/- mice were treated with PBS or sensitized 5 days/week for 3 or 5 weeks with 10 M-BM-5l per application of 2.5 mg/ml of purified house dust mite allergen. 3 days after the last sensitization the lungs were removed and homogenized, and RNA was isolated from the right lobes using the TRIZOL method. Quantitative reverse transcription real-time PCR (qRT-PCR) was used to quantify the amounts of mRNA in the lungs using custom RT2 Profiler PCR Arrays designed by us and manufactured by Qiagen/SA Biosciences. qRT-PCR gene expression profiling				
+Term Source Name	ArrayExpress	EFO
+Term Source File	http://www.ebi.ac.uk/arrayexpress/	http://www.ebi.ac.uk/efo/efo.owl			
+Person Last Name	Dziarski	Park	Gupta	Dziarski	
+Person First Name	Roman	Shin	Dipika	Roman	
+Person Mid Initials		Y			
+Person Email	rdziar@iun.edu				
+Person Affiliation	Indiana University School of Medicine-Northwest				
+Person Phone	219-980-6535				
+Person Address	Indiana University School of Medicine-Northwest, 3400 Broadway, Gary, IN, USA				
+Person Roles	submitter				
+Protocol Name	P-GSE43137-1	P-GSE43137-3	P-GSE43137-4	P-GSE43137-2	P-GSE43137-5
+Protocol Description	For each gene, M-NM-^TCt was calculated using the same threshold (0.2) for all genes and Ct>35 considered as no expression, followed by normalization to 5 housekeeping genes (Hsp90ab1, Gusb, Hprt1, Gapdh, and Actb) included in each array, followed by calculation of M-NM-^TM-NM-^TCt for each gene from two arrays: M-NM-^TM-NM-^TCt = M-NM-^TCt1 M-bM-^@M-^S M-NM-^TCt2, where M-NM-^TCt1 is the HDM-sensitized mice group and M-NM-^TCT2 is the unsensitized mice group, using the program provided by Qiagen/SA Biosciences. ID_REF =  VALUE = normalized	Quantitative reverse transcription real-time PCR (qRT-PCR) was used to quantify the amounts of mRNA in the lungs using custom RT2 Profiler PCR Arrays manufactured by Qiagen/SA Biosciences. The arrays included 40 assay genes, 5 housekeeping genes, and reverse transcription efficiency and DNA contamination controls. All primer sets were from Qiagen/SA Biosciences, except for the Pglyrp1 primers. cDNA was synthesized from 2 M-5g of RNA using RT2 PCR Array First Strand Kit (Qiagen/SA Biosciences) and the arrays were performed according to the manufacturer instructions using Qiagen/SA Biosciences Master Mix. Each experiment was performed on RNA pooled from 4M-bM-^@M-^S5 mice/group and repeated 3 times with new groups of mice.	n/a	RNA was isolated from right lobes of unsensitized or sensitized lungs using the TRIZOL method (InVitrogen), followed by digestion with RNase-free DNase (Qiagen) and purification on RNeasy spin columns using RNeasy Minikit (Qiagen). In each experiment, for qRT-PCR gene expression array RNA was pooled from 4-5 mice per group.	n/a
+Protocol Type	normalization data transformation protocol	labelling protocol	hybridization protocol	nucleic acid extraction protocol	array scanning protocol
+Experimental Factor Name	GENOTYPE	SENSITIZED WITH			
+Experimental Factor Type	genotype	sensitized with			
+Publication Title	Peptidoglycan recognition protein 1 enhances experimental asthma by promoting Th2 and Th17 and limiting regulatory T cell and plasmacytoid dendritic cell responses.				
+Publication Author List	Park SY, Jing X, Gupta D, Dziarski R				
+PubMed ID	23420883				
+Publication DOI	10.4049/jimmunol.1202675				
+Comment[SecondaryAccession]	GSE43137				
+Comment[GEOReleaseDate]	2012-12-25				
+Comment[ArrayExpressSubmissionDate]	2012-12-24				
+Comment[GEOLastUpdateDate]	2013-03-07				
+Comment[AEExperimentType]	transcription profiling by RT-PCR				
+Comment[AdditionalFile:Data1]	GSE43137_fold_change.txt				
+Comment[AdditionalFile:Data2]	GSE43137_non_normalized.txt				
+SDRF File	E-GEOD-43137.sdrf.txt
