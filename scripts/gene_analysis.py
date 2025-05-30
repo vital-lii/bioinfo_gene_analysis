@@ -7,9 +7,9 @@ import os
 import argparse
 
 # 设置绘图风格
-plt.style.use('seaborn-v0_8-whitegrid')  # 新版本名称
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文
-plt.rcParams['axes.unicode_minus'] = False    # 正常显示负号
+plt.style.use('seaborn-v0_8-whitegrid')  
+plt.rcParams['font.sans-serif'] = ['SimHei']  
+plt.rcParams['axes.unicode_minus'] = False    
 
 def load_data(file_path):
     """加载CSV或Excel格式的基因表达数据"""
@@ -104,7 +104,7 @@ def create_visualizations(df_counts, df_stats, output_dir, top_genes=50, custom_
     # 检查数据列以便后续分析
     print("可用数值列:", df_counts_numeric.columns.tolist())
     
-    # 1. 火山图 - 上下调基因的可视化
+    # 1. 火山图 
     if 'log2FC' in df_stats.columns and 'pvalue' in df_stats.columns:
         plt.figure(figsize=(10, 8))
         
@@ -166,22 +166,21 @@ def create_visualizations(df_counts, df_stats, output_dir, top_genes=50, custom_
         plt.savefig(os.path.join(output_dir, 'volcano_plot.png'), dpi=300, bbox_inches='tight')
         plt.close()
     
-    # 2. 热图 - 优先使用GF和SCFA均值列
+    # 2. 热图 
     if all(col in df_counts_numeric.columns for col in ['GF_mean', 'SCFA_mean']):
         # 选择最显著的基因，限制数量为指定的top_genes
         df_stats_sorted = df_stats.sort_values('padj')
         
-        # 检测重复的基因名并去除重复项
+        # 检测重复的基因名并去除重
         non_duplicate_genes = []
         seen_genes = set()
         
-        # 只保留各个基因的第一个出现
+        
         for gene in df_stats_sorted.index:
             if gene not in seen_genes:
                 non_duplicate_genes.append(gene)
                 seen_genes.add(gene)
         
-        # 只取前top_genes个唯一基因
         top_sig_genes = non_duplicate_genes[:top_genes]
         print(f"已选择前{len(top_sig_genes)}个唯一基因（按P值排序）")
         
@@ -412,14 +411,12 @@ def main(file_path, output_dir, pvalue_threshold=0.05, fc_threshold=1.0, top_gen
     sig_up = sum((df_stats['padj'] < pvalue_threshold) & (df_stats['log2FC'] > fc_threshold))
     sig_down = sum((df_stats['padj'] < pvalue_threshold) & (df_stats['log2FC'] < -fc_threshold))
     
-    # 输出详细统计信息
     print(f"padj<{pvalue_threshold}的基因数量: {sum(df_stats['padj'] < pvalue_threshold)}")
     print(f"log2FC>{fc_threshold}的基因数量: {sum(df_stats['log2FC'] > fc_threshold)}")
     print(f"log2FC<-{fc_threshold}的基因数量: {sum(df_stats['log2FC'] < -fc_threshold)}")
     print(f"上调条件: (padj<{pvalue_threshold} & log2FC>{fc_threshold})的基因数量: {sig_up}")
     print(f"下调条件: (padj<{pvalue_threshold} & log2FC<-{fc_threshold})的基因数量: {sig_down}")
     
-    # 增加对gene_type的分析统计
     if 'gene_type' in df_stats.columns:
         type_counts = df_stats['gene_type'].value_counts()
         print("\n基因类型统计:")
@@ -447,15 +444,12 @@ if __name__ == "__main__":
                         help='热图中显示的顶部基因数量（默认：50）')
     parser.add_argument('-g', '--genes', type=str, 
                         help='指定关注的基因列表，用逗号分隔')
-    
-    # 解析命令行参数
+
     args = parser.parse_args()
     
-    # 根据参数处理基因列表
     custom_genes = None
     if args.genes:
         custom_genes = [g.strip() for g in args.genes.split(',')]
         print(f"将关注以下指定基因: {', '.join(custom_genes)}")
     
-    # 运行分析
     main(args.input, args.output, args.pvalue, args.fc, args.top, custom_genes) 

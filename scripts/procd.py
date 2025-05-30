@@ -42,7 +42,6 @@ def clean_data(file_path, max_rows=25844, filter_zeros=True):
     if count_cols:
         print(f"发现 {len(count_cols)} 个计数列: {', '.join(count_cols)}")
         
-        # 如果需要过滤零值行
         if filter_zeros:
             print("开始过滤全零行...")
             before_filter = df_cleaned.shape[0]
@@ -117,7 +116,7 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    # 清理数据
+    
     cleaned_df = clean_data(args.input, args.rows, not args.keep_zeros)
     
     # 保存清理后的数据

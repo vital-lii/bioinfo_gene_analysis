@@ -75,11 +75,10 @@ def calculate_group_means(file_path, max_rows=None, min_expr_threshold=1.0):
     # 计算log2 fold change
     result_df['log2FC'] = np.log2((result_df['SCFA_mean'] + 1) / (result_df['GF_mean'] + 1))
     
-    # 计算是否可能显著（简单估计，基于与全0的区别）
+    # 计算是否可能显著）
     result_df['is_GF_all_zero'] = (df_counts[gf_sample_cols] == 0).all(axis=1)
     result_df['is_SCFA_all_zero'] = (df_counts[scfa_sample_cols] == 0).all(axis=1)
     
-    # 添加新字段用于标记基因类型
     result_df['gene_type'] = 'non_specific'  # 默认为非特异性
     
     # 创建组特异性基因分类
@@ -207,11 +206,10 @@ def calculate_group_means(file_path, max_rows=None, min_expr_threshold=1.0):
         non_zero_df = non_zero_df.reset_index()
         non_zero_df = non_zero_df.rename(columns={'index': gene_col if gene_col else 'gene'})
     
-    # 过滤掉P值大于0.05的行（保留P值等于0.05的行）
     significant_df = non_zero_df[non_zero_df['pvalue'] <= 0.05].copy()
     print(f"\n过滤后显著性行数: {len(significant_df)} / {len(non_zero_df)}")
     
-    # 汇总各类基因数量
+    # 汇总
     print("\n基因分类统计:")
     print(f"GF特异性高表达基因: {len(specific_genes['GF_specific_high'])}")
     print(f"GF特异性中等表达基因: {len(specific_genes['GF_specific_medium'])}")
@@ -357,7 +355,7 @@ if __name__ == "__main__":
     # 分析组间差异
     results = analyze_group_differences(mean_df, args.fc, args.pvalue)
     
-    # 如果需要，将原始样本数据添加回去
+    # 可能需要，将原始样本数据加回去
     if args.keep_original:
         print("\n保留原始样本列...")
         # 读取原始数据
@@ -376,21 +374,18 @@ if __name__ == "__main__":
         gf_cols = [col for col in original_df.columns if col.startswith('GF') and col != 'GF_mean']
         scfa_cols = [col for col in original_df.columns if col.startswith('SCFA') and col != 'SCFA_mean']
         
-        # 合并数据（根据基因列）
+        # 合并
         for col in gf_cols + scfa_cols:
             if col not in mean_df.columns:  # 避免重复列
                 mean_df[col] = original_df.set_index(gene_col)[col]
     
-    # 在main函数中，保存结果之前添加筛选
     # 筛选显著差异基因
     filtered_df = mean_df[
         (abs(mean_df['log2FC']) >= args.fc) & 
         (mean_df['padj'] <= args.pvalue)
     ].copy()
 
-    # 替换原来的保存语句
-    # mean_df.to_csv(args.output, index=False)  # 旧代码
-    filtered_df.to_csv(args.output, index=False)  # 新代码
+    filtered_df.to_csv(args.output, index=False)  
     
     # 保存各类基因结果
     output_dir = os.path.dirname(args.output)

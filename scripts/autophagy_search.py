@@ -35,7 +35,7 @@ class PubMedSearcher:
         self.path_manager = PathManager(output_dir)
         self.path_manager.ensure_dirs()
         
-        # 设置日志
+        # 设日志
         self.setup_logging()
         
         # 设置Entrez (优先使用参数值，否则使用环境变量)
@@ -114,14 +114,14 @@ class PubMedSearcher:
                 article_data = Entrez.read(handle)
                 article = article_data["PubmedArticle"][0]["MedlineCitation"]["Article"]
                 
-                # 提取摘要
+                # 提摘要
                 abstract = article.get("Abstract", {}).get("AbstractText", ["No abstract"])[0]
                 
-                # 提取MeSH词
+                # 提MeSH词
                 mesh_terms = article_data["PubmedArticle"][0]["MedlineCitation"].get("MeshHeadingList", [])
                 keywords = ", ".join([mesh.get("DescriptorName", "") for mesh in mesh_terms])
                 
-                # 提取年份
+                # 提年份
                 pub_date = article["Journal"]["JournalIssue"]["PubDate"]
                 year = pub_date.get("Year", "Unknown")
                 
@@ -166,10 +166,10 @@ class PubMedSearcher:
                 continue
             
             # 计算预估时间
-            estimated_time = len(pmids) * 0.5 / 60  # 转换为分钟
+            estimated_time = len(pmids) * 0.5 / 60  # 转分钟
             print(f"正在获取文献详细信息... (预计需要 {estimated_time:.1f} 分钟)")
             
-            # 获取详细信息
+            # 详细信息
             articles = []
             start_time = time.time()
             

@@ -9,10 +9,8 @@ import os
 import numpy as np
 
 def main():
-    # 创建命令行参数解析器
     parser = argparse.ArgumentParser(description='基因集富集分析脚本')
     
-    # 添加基本参数
     parser.add_argument('-l', '--list_libraries', action='store_true', help='列出所有可用的基因集库')
     parser.add_argument('-s', '--species', default='Mouse', help='物种 (默认: Mouse)')
     parser.add_argument('-n', '--number', type=int, default=20, help='可视化展示的通路数量 (默认: 20)')
@@ -22,7 +20,6 @@ def main():
     parser.add_argument('-d', '--debug', action='store_true', help='启用调试模式，显示更多信息')
     parser.add_argument('--use_original_pval', action='store_true', help='使用原始P值而非调整后P值进行筛选')
     
-    # 只有当不是列出库的模式时，才需要输入和输出参数
     input_output_group = parser.add_argument_group('输入输出参数')
     input_output_group.add_argument('-i', '--input', help='输入CSV文件路径')
     input_output_group.add_argument('-o', '--output', help='输出结果文件夹路径')
@@ -41,10 +38,10 @@ def main():
     if not args.input or not args.output:
         parser.error("当不使用 -l/--list_libraries 时，必须提供 -i/--input 和 -o/--output 参数")
     
-    # 确保输出目录存在
+    # 确保输出目录存在  
     os.makedirs(args.output, exist_ok=True)
     
-    # 读取输入文件
+    
     try:
         data = pd.read_csv(args.input)
         print(f"成功读取文件: {args.input}")
@@ -55,7 +52,7 @@ def main():
     
     # 提取基因符号列表，确保所有值都是字符串
     if args.column in data.columns:
-        # 将基因符号列转换为字符串类型，避免float对象没有strip方法的错误
+        # 将基因符号列转换为字符串类
         data[args.column] = data[args.column].astype(str)
         
         # 移除空格，过滤掉空值和NA值
@@ -65,7 +62,7 @@ def main():
         gene_list = data[args.column].tolist()
         print(f"共提取到 {len(gene_list)} 个基因符号")
         
-        # 调试模式下显示部分基因符号
+        
         if args.debug:
             print("基因列表前10个样本:")
             print(gene_list[:10])
@@ -82,19 +79,16 @@ def main():
     
     # 选择合适的基因集库
     if args.kegg_library:
-        # 使用用户指定的库
         gene_sets = args.kegg_library
     else:
-        # 自动选择合适的库
         species_key = args.species.lower()
-        # 尝试查找匹配物种的KEGG库
         matched_libs = [lib for lib in kegg_libraries if species_key in lib.lower()]
         
         if matched_libs:
             gene_sets = matched_libs[0]  # 使用第一个匹配的库
         else:
-            # 如果没有匹配物种的库，使用任何KEGG库
-            gene_sets = kegg_libraries[0] if kegg_libraries else 'KEGG_2016'
+            # 如果没有匹配物种的库，使用特定库
+            gene_sets = kegg_libraries[0] if kegg_libraries else 'KEGG_2024'
     
     print(f"使用数据库: {gene_sets}")
     
@@ -125,42 +119,34 @@ def main():
     try:
         print(f"正在进行{library_type}富集分析...原始P值阈值: {args.pvalue}")
         
-        # 如果基因列表特别长，可能需要进行分批处理或采样
         if len(gene_list) > 3000 and args.debug:
             print(f"警告: 基因列表包含 {len(gene_list)} 个基因，这可能导致分析速度变慢或内存问题")
             
-        # 确保所有基因符号都是有效的字符串
         valid_genes = [str(gene).strip() for gene in gene_list if gene and str(gene).strip().lower() != 'nan']
         if len(valid_genes) < len(gene_list):
             print(f"注意: 从原始列表中移除了 {len(gene_list) - len(valid_genes)} 个无效基因符号")
             gene_list = valid_genes
         
-        # 为确保获取所有结果，先使用宽松的P值运行分析    
         enr = gp.enrichr(gene_list=gene_list, 
                          gene_sets=gene_sets,
                          organism=args.species,
                          outdir=args.output,
-                         cutoff=1.0)  # 使用宽松P值以获取全部结果
+                         cutoff=1.0)  
         
-        # 获取结果并按原始P值排序
         result = enr.results
-        result = result.sort_values('P-value')  # 按原始P值排序
+        result = result.sort_values('P-value')  
         
-        # 根据用户选择的P值阈值筛选结果
         filtered_result = result[result['P-value'] <= args.pvalue]
         
-        # 保存全部结果
         all_result_file = os.path.join(args.output, f'{library_type.replace(" ", "_")}_all_results.csv')
         result.to_csv(all_result_file, index=False)
         print(f"所有富集分析结果已保存至: {all_result_file}")
         
-        # 保存筛选后的结果
         if not filtered_result.empty:
             filtered_file = os.path.join(args.output, f'{library_type.replace(" ", "_")}_filtered_pval_{args.pvalue}.csv')
             filtered_result.to_csv(filtered_file, index=False)
             print(f"按原始P值 {args.pvalue} 筛选后的结果已保存至: {filtered_file}")
         
-        # 检查是否有结果
         if filtered_result.empty:
             print(f"警告: 在原始P值阈值 {args.pvalue} 下没有找到显著富集的{library_type}。")
             print(f"尝试提高P值阈值，例如使用 -p 0.1 或更高，或查看完整结果文件。")
@@ -175,7 +161,7 @@ def main():
             else:
                 print(f"没有找到任何{library_type}结果，可能是基因列表与数据库匹配问题")
                 
-                # 调试信息
+                
                 if args.debug:
                     debug_file = os.path.join(args.output, 'gene_list_debug.txt')
                     with open(debug_file, 'w') as f:
@@ -187,24 +173,20 @@ def main():
         # 选择用于可视化的数据
         vis_data = filtered_result if not filtered_result.empty else result.head(min(args.number, len(result)))
         
-        # 创建可视化图表 - 使用自定义函数，不依赖enr.plot
+        
         print("生成可视化图表...")
         try:
             # 获取要可视化的结果数据
             n_terms = min(args.number, len(vis_data))
             plot_data = vis_data.head(n_terms)
             
-            # 1. 创建条形图 - 不使用enr.plot
             plt.figure(figsize=(12, max(8, n_terms * 0.4)))  # 根据条目数量调整高度
             
-            # 提取数据
             terms = plot_data['Term'].tolist()
             pvals = -np.log10(plot_data['P-value'].values)
             
-            # 创建Y坐标位置
             y_pos = np.arange(len(terms))
             
-            # 绘制横向条形图
             bars = plt.barh(y_pos, pvals, align='center', alpha=0.7)
             plt.yticks(y_pos, terms)
             plt.xlabel('-log10(P-value)')
@@ -218,7 +200,6 @@ def main():
             
             plt.tight_layout()
             
-            # 保存条形图
             barplot_file = os.path.join(args.output, f'{library_type.replace(" ", "_")}_barplot.png')
             plt.savefig(barplot_file, dpi=300)
             plt.close()
@@ -264,7 +245,7 @@ def main():
                 
                 plt.tight_layout()
                 
-                # 保存点图
+                
                 dotplot_file = os.path.join(args.output, f'{library_type.replace(" ", "_")}_dotplot.png')
                 plt.savefig(dotplot_file, dpi=300)
                 plt.close()
@@ -291,7 +272,7 @@ def main():
     except Exception as e:
         print(f"富集分析过程中出错: {e}")
         import traceback
-        traceback.print_exc()  # 打印详细的错误堆栈，有助于调试
+        traceback.print_exc()  # 打印详细的错误
         return
     
     print("\n分析完成!")

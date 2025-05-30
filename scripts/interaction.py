@@ -96,8 +96,8 @@ def get_string_interactions_by_id(string_ids, organism, min_score=400, add_nodes
         "species": organism,                    # 物种ID
         "caller_identity": "pypath_alt_tool",   # 调用者标识
         "required_score": min_score,            # 最小互作分数
-        "add_nodes": add_nodes,                # 是否添加额外节点
-        "network_type": "functional"           # 功能网络(包括间接互作)
+        "add_nodes": add_nodes,                
+        "network_type": "functional"           # 功能网络
     }
     
     try:
@@ -118,10 +118,10 @@ def main():
         print(f"Error: Unsupported species '{args.species}'. Use 'human', 'mouse', or 'rat'.")
         sys.exit(1)
     
-    # 创建输出目录
+    # 创输出
     os.makedirs(os.path.dirname(args.output), exist_ok=True)
     
-    # 读取输入文件
+    # 读取输入
     try:
         print(f"Reading input file: {args.input}")
         data = pd.read_csv(args.input)
@@ -130,7 +130,7 @@ def main():
             sys.exit(1)
             
         gene_symbols = data['gene_symb'].tolist()
-        # 过滤掉非字符串或空值
+        # 过滤掉非字符串/空值
         gene_symbols = [g for g in gene_symbols if isinstance(g, str) and g.strip()]
         print(f"Loaded {len(gene_symbols)} valid genes from input file")
     except Exception as e:
@@ -139,18 +139,16 @@ def main():
         traceback.print_exc()
         sys.exit(1)
     
-    # 第1步：获取基因符号到STRING ID的映射
+    
     print("Step 1: Mapping gene symbols to STRING IDs...")
     gene_to_string, mapping_data = get_string_id_mapping(gene_symbols, organism)
     
-    # 保存映射数据
     with open(f"{args.output}_string_mapping.json", 'w') as f:
         json.dump(mapping_data, f, indent=2)
     
     recognized_genes = [gene for gene in gene_symbols if gene in gene_to_string]
     print(f"Recognized {len(recognized_genes)}/{len(gene_symbols)} genes ({len(recognized_genes)/len(gene_symbols)*100:.2f}%)")
     
-    # 保存识别和未识别的基因列表
     with open(f"{args.output}_recognized_genes.txt", 'w') as f:
         f.write("\n".join(recognized_genes))
     
@@ -166,7 +164,6 @@ def main():
         upper_genes = [gene.upper() for gene in unrecognized_genes]
         upper_to_string, _ = get_string_id_mapping(upper_genes, organism)
         
-        # 更新映射
         for i, gene in enumerate(unrecognized_genes):
             if upper_genes[i] in upper_to_string:
                 gene_to_string[gene] = upper_to_string[upper_genes[i]]
@@ -174,7 +171,7 @@ def main():
         
         print(f"After uppercase conversion: Recognized {len(recognized_genes)}/{len(gene_symbols)} genes ({len(recognized_genes)/len(gene_symbols)*100:.2f}%)")
     
-    # 第2步：使用STRING ID获取互作关系
+    # 取互作关系
     print(f"Step 2: Retrieving interactions with score threshold {args.score}...")
     string_ids = [gene_to_string[gene] for gene in recognized_genes if gene in gene_to_string]
     
@@ -197,11 +194,10 @@ def main():
             print("    Waiting 1 second to avoid API rate limits...")
             time.sleep(1)
     
-    # 保存原始互作数据
+    # 保存原互作数据
     with open(f"{args.output}_raw_interactions.json", 'w') as f:
         json.dump(all_interactions, f, indent=2)
     
-    # 第3步（可选）：获取一级邻居互作
     if args.include_neighbors and len(recognized_genes) > 0:
         print(f"Step 3: Retrieving first-degree neighbor interactions with score threshold {args.neighborhood_score}...")
         
@@ -215,7 +211,7 @@ def main():
         for i, string_id in enumerate(top_string_ids):
             print(f"  Retrieving neighbors for gene {i+1}/{len(top_string_ids)}: {string_id}...")
             
-            # 为每个基因获取高可信度邻居(添加10个)
+            # 为每个基因获取高可信度邻居
             interactions = get_string_interactions_by_id([string_id], organism, 
                                                        min_score=args.neighborhood_score, 
                                                        add_nodes=10)
@@ -236,7 +232,7 @@ def main():
         with open(f"{args.output}_with_neighbors_raw.json", 'w') as f:
             json.dump(all_interactions, f, indent=2)
     
-    # 第4步：构建网络
+    # 建网络
     print("Step 4: Building interaction network...")
     network = nx.Graph()
     edges_added = set()  # 跟踪已添加的边以避免重复
@@ -256,7 +252,6 @@ def main():
         if edge_key in edges_added:
             continue
         
-        # 将名称映射回原始基因符号(如果可能)
         source_gene = string_to_gene.get(source_name, source_name)
         target_gene = string_to_gene.get(target_name, target_name)
         
@@ -329,7 +324,7 @@ def main():
             input_only_network = network.copy()
             non_input_nodes = [n for n in network.nodes() if n not in gene_symbols]
             print(f"Creating input-only visualization (removing {len(non_input_nodes)} neighbor nodes)...")
-            # 不直接删除，而是创建子图
+            
             input_only_network = network.subgraph([n for n in network.nodes() if n in gene_symbols])
             print(f"Input-only network has {input_only_network.number_of_nodes()} nodes and {input_only_network.number_of_edges()} edges")
         
@@ -350,16 +345,16 @@ def main():
                 node_size.append(100)
                 node_color.append('lightblue')  # 邻居基因为浅蓝色
         
-        # 设置布局
+        # 布局设置
         pos = nx.spring_layout(network, k=0.3, iterations=50)
         
-        # 绘制网络
+        # 绘网络图
         nx.draw_networkx(
             network, pos,
             node_color=node_color,
             node_size=node_size,
             font_size=8 if network.number_of_nodes() < 50 else 0,
-            edge_color='gray',   # 改为灰色提高可见度
+            edge_color='gray',   #改色
             width=[min(data.get('weight', 0.4) * 1000, 2.0) for u, v, data in network.edges(data=True)],  # 大幅增加边的宽度
             alpha=0.8
         )
@@ -401,7 +396,7 @@ def main():
             plt.tight_layout()
             plt.savefig(f"{args.output}_hub_network.png", dpi=300)
         
-        # 3. 度分布图
+        # 分布图
         plt.figure(figsize=(10, 6))
         # 只包括输入基因的度分布
         input_degrees = [d for n, d in network.degree() if n in gene_symbols]
@@ -421,7 +416,7 @@ def main():
         plt.grid(True, linestyle='--', alpha=0.7)
         plt.savefig(f"{args.output}_degree_dist.png", dpi=300)
         
-        # 输出重要统计信息到文本文件
+        # 输出文本文件
         with open(f"{args.output}_stats.txt", 'w') as f:
             f.write(f"Network Statistics for {args.output}\n")
             f.write("=" * 50 + "\n")

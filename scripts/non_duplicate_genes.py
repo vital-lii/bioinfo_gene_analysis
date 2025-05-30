@@ -95,8 +95,7 @@ def handle_duplicates(df, method='merge', gene_column='gene_symb', value_columns
                 # 如果只有一行，直接添加
                 result_df = pd.concat([result_df, gene_rows])
             else:
-                # 如果有多行，合并数据
-                merged_row = gene_rows.iloc[0:1].copy()  # 创建基于第一行的副本
+                merged_row = gene_rows.iloc[0:1].copy()  
                 
                 # 对数值列取平均
                 for col in value_columns:
@@ -119,10 +118,8 @@ def handle_duplicates(df, method='merge', gene_column='gene_symb', value_columns
                         most_sig_idx = gene_rows['pvalue'].idxmin()
                         merged_row['log2FC'] = df.loc[most_sig_idx, 'log2FC']
                     else:
-                        # 两者都没有有效值，则使用log2FC的平均值
                         merged_row['log2FC'] = gene_rows['log2FC'].mean()
                 
-                # 合并字符串列内容（如果有的话）
                 for col in df.select_dtypes(include=['object']).columns:
                     if col not in [gene_column, '_temp_gene_id']:  # 跳过基因名和临时ID列
                         unique_values = gene_rows[col].unique()
@@ -139,7 +136,6 @@ def handle_duplicates(df, method='merge', gene_column='gene_symb', value_columns
     
     elif method == 'keep_first':
         print("保留每个基因的第一次出现")
-        # 依次处理每个重复基因，只保留第一次出现
         result_df = df.drop_duplicates(subset=[gene_column], keep='first')
         
         print(f"处理完成: 从{len(df)}行减少为{len(result_df)}行")
@@ -247,10 +243,8 @@ def analyze_duplicates(df, gene_column='gene_symb'):
                     print(f"  - {col}: 范围[{min_val:.6f}, {max_val:.6f}]")
 
 def main():
-    # 创建命令行参数解析器
     parser = argparse.ArgumentParser(description='预处理基因表达数据，解决重复基因名问题')
     
-    # 添加参数
     parser.add_argument('-i', '--input', type=str, required=True, 
                         help='输入文件路径(CSV或Excel格式)')
     parser.add_argument('-o', '--output', type=str, required=True,
@@ -263,20 +257,15 @@ def main():
     parser.add_argument('-a', '--analyze', action='store_true',
                         help='分析重复基因之间的差异')
     
-    # 解析命令行参数
     args = parser.parse_args()
     
-    # 加载数据
     df = load_data(args.input)
     
-    # 分析重复基因差异
     if args.analyze:
         analyze_duplicates(df, args.gene_column)
     
-    # 处理重复基因
     processed_df = handle_duplicates(df, args.method, args.gene_column)
     
-    # 保存处理后的数据
     output_ext = os.path.splitext(args.output)[1].lower()
     if output_ext == '.csv':
         processed_df.to_csv(args.output, index=False)
